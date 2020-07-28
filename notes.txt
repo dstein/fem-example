@@ -1,0 +1,49 @@
+Git & Bash
+
+- Git (works with Github) is a distributed source control management tool.
+- Bash is the shell we work in to interact with Git (same as command line)
+
+
+Some useful commands
+- 'exit' exits the program!
+- 'pwd' basically asks "what directory am I in?" (print working directory)
+- 'ls' lists everything within this directory.
+	- 'ls -a' the '-a' is a flag, and a flag is passed to the 'ls' command to modify its output
+	- 'ls -lah' everything after the dash '-' modifies the 'ls' output. '-l' shows a long output, '-a' shows all files, '-h' shows readble file
+	sizes. Combining them into '-lah' gives your 'ls' output a modified look. 
+- 'cd' change directory. If you're chaning directory into a folder with spaces use quotes. So directory Frontend Masters is "Frontend Masters"
+- 'clear' clears console
+- 'cd ~' the ~ is reference to your home directory for your user account. This will take you to your home directory.
+- 'man' THIS WILL NOT WORK ON WINDOWS GIT BASH. Instead use --help so 'ls --help'
+- '--help' will show more info about a particular command so 'ls --help' will show info and flags you can use with descriptions
+	- This site helps with commands: https://explainshell.com/explain?cmd=ls+-lah
+
+- 'mkdir {name}' will create a new folder in the current directory. Ex: 'mkdir my-new-folder'
+- 'touch {name}' will create a new file in the current directory. Ex: 'touch index.html'
+
+- Add content to file
+	- 'echo "<h1>Hello</h1>" > index.html' will echo (add) the h1 tag into the index.html file
+- Read content from file
+	- 'cat {name}' will print out the contents, so 'cat index.html'
+
+- USEFUL, you can use tab completion if you start typing out a directory and hit tab. If there are too many similar results you'll
+have to hit tab twice and it'll output all suggested results. You just need to keep typing more out of what you're searching for to
+get the initial autocomplete to work
+
+- HOW TO EXIT VIM (Git sometimes throws you in here)
+	- Vim is a strange editor... that you might find yourself in!
+	- In Git Bash type 'vi index.html' (given that file exists in the directory) and you'll be in Vim, where nothing works right!
+		- Within Vim hit esc to get into command mode
+		- You can use ':q' to quit, but it may give you a notice about not writing to the file
+		- From here you can use ':w' to write first or combine ':wq' to write then quit to get out of Vim!
+
+	- Vim is useful because it is on every server by default. If you know Vim you can remotely edit contents on another server and
+	get out quickly.
+
+
+========================================================
+
+Working with Git
+
+- 'git init'
+	- Initializes empty git repository in the project folder (adds a .git folder - source control)
